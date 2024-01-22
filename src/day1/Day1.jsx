@@ -24,17 +24,21 @@ const Day1 = () => {
 
 
     function printAllAlpabets() {
-        const arr = [...new Array(26)];
-        let start = 65;
-        arr.map((_, i) => {
-            console.log(String.fromCharCode(start, i++))
-        })
+        let data = ''
+        console.log(data, "data")
+        for (let i = 'A'.charCodeAt(0); i <= 'Z'.charCodeAt(0); i++) {
+            console.log(i, String.fromCharCode(i))
+
+            data += `\n ${String.fromCharCode(i)}`
+        }
+        return data;
     }
 
     console.log(printAllAlpabets())
     return (
         <>
             <h1>Day1</h1>
+            <h3>{printAllAlpabets()}</h3>
         </>
     )
 }
