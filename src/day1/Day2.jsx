@@ -7,7 +7,9 @@ const Day2 = () => {
     function test1(data,callback){
         const newData = data.map((ele)=> ele *2);
         callback(newData)
+        
     }
+    getcallback
 
     return (
         <div>Day2</div>
