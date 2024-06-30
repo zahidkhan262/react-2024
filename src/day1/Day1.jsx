@@ -55,6 +55,25 @@ let duplicate = [];
     return duplicate;
     
 }
-console.log(removeDuplicateNums([0,0,1,2,3,4,5,6]))
+console.log(removeDuplicateNums([0,0,1,2,3,4,5,6]));
+
+
+
+
+const findDuplicateNums = (nums) =>{
+let hash = {};
+let duplicate = [];
+    for(let val of nums){
+      
+        if(hash[val]){
+            duplicate.push(val);
+        }else{
+             hash[val] = true;
+        }
+    }
+    return duplicate;
+    
+}
+console.log(findDuplicateNums([0,0,1,2,3,4,5,6,6]))
 
 export default Day1
