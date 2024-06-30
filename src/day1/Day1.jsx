@@ -43,4 +43,18 @@ const Day1 = () => {
     )
 }
 
+const findDuplicateNums = (nums) =>{
+let hash = {};
+let duplicates = [];
+    for(let val of nums){
+        if(!hash[val]){
+             hash[val] = true;
+            duplicate.push(val);
+        }
+    }
+    return duplicate;
+    
+}
+console.log(findDuplicateNums([0,0,1,2,3,4,5,6])
+
 export default Day1
