@@ -10,7 +10,37 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const axios = require("axios");
+
+// (async () => {
+//   axios.interceptors.request.use(
+//     function (req) {
+//       req.time = { startTime: new Date() };
+//       return req;
+//     },
+//     (err) => {
+//       return Promise.reject(err);
+//     }
+//   );
+
+//   axios.interceptors.response.use(
+//     function (res) {
+//       res.config.time.endTime = new Date();
+//       res.duration =
+//         res.config.time.endTime - res.config.time.startTime;
+//       return res;
+//     },
+//     (err) => {
+//       return Promise.reject(err);
+//     }
+//   );
+
+//   axios
+//     .get("http://localhost:3000")
+//     .then((res) => {
+//       console.log(res.duration)
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// })();
